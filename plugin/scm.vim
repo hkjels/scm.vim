@@ -21,6 +21,9 @@ endif
   NeoBundle 'gregsexton/gitv'         " Repository viewer
   NeoBundle 'kablamo/vim-git-log'     " For browsing git logs
 
+  " Gitv
+  let g:Gitv_TruncateCommitSubjects=1
+
   cabbrev gb Gblame
   cabbrev gc Gcommit
   cabbrev gd Gdiff
