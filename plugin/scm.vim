@@ -17,7 +17,6 @@ endif
 " Git ------------------------------------------------------------------ {{{
 
   NeoBundle 'tpope/vim-fugitive'      " Git UI
-  NeoBundle 'airblade/vim-gitgutter'  " Display changes in a gutter
   NeoBundle 'gregsexton/gitv'         " Repository viewer
   NeoBundle 'kablamo/vim-git-log'     " For browsing git logs
 
@@ -34,9 +33,10 @@ endif
 " }}}
 
 
-" Merging -------------------------------------------------------------- {{{
+" Shared --------------------------------------------------------------- {{{
 
   NeoBundle 'sjl/splice.vim'          " Simplify three-way merge
+  NeoBundle 'mhinz/vim-signify'       " Display changes in a gutter
 
   " Move between changes in diff-mode using arrow-keys
   au BufEnter * if &diff | call s:DiffMappings()
